@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placement Adda - Internship Listings</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="assets/logo2.png" alt="Placement Adda Logo" class="logo" />
+                <h1>Placement Adda</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for internships..." />
+                <button type="submit">🔍</button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="home-link">Home</a>
+                <a href="#" class="register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <select id="location-filter">
+            <option value="">All Locations</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+        </select>
+        <select id="stipend-filter">
+            <option value="">All Stipends</option>
+            <option value="5000">₹5,000+</option>
+            <option value="10000">₹10,000+</option>
+            <option value="15000">₹15,000+</option>
+        </select>
+        <select id="internship-type-filter">
+            <option value="">All Internship Types</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Remote">Remote</option>
+            <option value="Hybrid">Hybrid</option>
+        </select>
+        <button id="apply-filters">Apply Filters</button>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Section - Internship Listings -->
+        <div class="job-listings" id="internship-listings">
+            <!-- Internships will be dynamically loaded here -->
+        </div>
+
+        <!-- Right Section - Internship Description -->
+        <div class="job-details" id="internship-details">
+            <h2>Internship Details</h2>
+            <p>Select an internship to see the details here.</p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
